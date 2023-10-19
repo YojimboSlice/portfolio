@@ -42,14 +42,14 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-stone-50 text-[17px] max-w-3xl leadin-[30px]"
       >
-        When I'm not making music or playing Street Fighter, I'm practicing web
-        development with skills in both front-end and some back-end. I am
-        currently using JavaScript, HTML, React, and mostly Tailwind to create
-        front-end applications while integrating with Stripe API for payments,
-        TaxJar for tax calculation, EasyPost for shipping and label creation,
-        and SendGrid for email validation on e-commerce websites. I have
-        experiance with Supabase, and Firebase Firestore for user data storage.
-        For backend applications, I am most comfortable using Express.js.
+        I'm a web developer with skills in both front-end and some back-end. I
+        am currently using JavaScript, HTML, React, and mostly Tailwind to
+        create front-end applications while integrating with Stripe API for
+        payments, TaxJar for tax calculation, EasyPost for shipping and label
+        creation, and SendGrid for email validation on e-commerce websites. I
+        have experiance with Supabase, and Firebase Firestore for user data
+        storage. For backend applications, I am most comfortable using
+        Express.js.
       </motion.p>
       <div className="mt-20 grid grid-cols-2 gap-10">
         {services.map((service, index) => (
