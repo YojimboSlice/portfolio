@@ -218,7 +218,7 @@ const projects = [
     image: pacificworkwear,
     source_code_link:
       "https://github.com/YojimboSlice/e-commerce-frontend/tree/main/",
-    website_link: "https://helpful-cendol-3ed705.netlify.app/home",
+    website_link: "https://genuine-meerkat-440485.netlify.app/shop",
   },
   {
     name: "The Wild Oasis",
