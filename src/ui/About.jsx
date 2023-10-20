@@ -42,14 +42,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-stone-50 text-[17px] max-w-3xl leadin-[30px]"
       >
-        I'm a web developer with skills in both front-end and some back-end. I
-        am currently using JavaScript, HTML, React, and mostly Tailwind to
-        create front-end applications while integrating with Stripe API for
-        payments, TaxJar for tax calculation, EasyPost for shipping and label
-        creation, and SendGrid for email validation on e-commerce websites. I
-        have experiance with Supabase, and Firebase Firestore for user data
-        storage. For backend applications, I am most comfortable using
-        Express.js.
+        Learning both front-end and some back-end, I am currently using
+        JavaScript, HTML, React, and mostly Tailwind to create front-end
+        applications. For backend, I've learned how to use Express.js to create
+        an app that manages all the endpoints for my capstone project. This
+        backend app integrates with Stripe, EasyPost, TaxJar, and SendGrid
+        API's. When I'm not learning about programming, I'm jamming out,
+        thinking of lyrics, and messing with synthesizers. Besides music, I come
+        from a team sports background via rugby growing up. Hopefully I can be
+        on your team next!
       </motion.p>
       <div className="mt-20 grid grid-cols-2 gap-10">
         {services.map((service, index) => (
