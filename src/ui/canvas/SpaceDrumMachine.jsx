@@ -17,18 +17,39 @@ import NoteBox from "./NoteBox";
 import Text from "./Text";
 import { calculateBoxCenter } from "../../utils/calculateBoxCenter";
 
+const audioMap = {
+  z: "/sounds/kick.wav",
+  x: "/sounds/snare.wav",
+  c: "/sounds/closedhihat.wav",
+  a: "/sounds/rimshot.wav",
+  s: "./sounds/vocal.wav",
+  d: "/sounds/openhihat.wav",
+  q: "/sounds/basepiano.wav",
+  w: "/sounds/basepianovocals.wav",
+  e: "/sounds/basepianovocals2.wav",
+};
+
+const preloadedSounds = {};
+
+const preloadSounds = () => {
+  for (const key in audioMap) {
+    if (audioMap.hasOwnProperty(key)) {
+      const sound = new Howl({
+        src: [audioMap[key]],
+        volume: 1.0,
+        preload: true,
+      });
+      preloadedSounds[key] = sound;
+    }
+  }
+};
+
 function SpaceDrumMachine() {
-  const audioMap = {
-    z: "/sounds/kick.wav",
-    x: "/sounds/snare.wav",
-    c: "/sounds/closedhihat.wav",
-    a: "/sounds/rimshot.wav",
-    s: "./sounds/vocal.wav",
-    d: "/sounds/openhihat.wav",
-    q: "/sounds/basepiano.wav",
-    w: "/sounds/basepianovocals.wav",
-    e: "/sounds/basepianovocals2.wav",
-  };
+  const playingSoundsRef = useRef([]);
+  const [activeBox, setActiveBox] = useState(null);
+  const [bokehScale, setBokehScale] = useState(5);
+  const [isVisible, setIsVisible] = useState(false);
+  const targetRef = useRef(null);
 
   const drumPads = [
     { position: [-2, 2, 0], id: "q", color: "aqua" },
@@ -54,11 +75,12 @@ function SpaceDrumMachine() {
     { position: [10, -2, -1], id: "c" },
   ];
 
-  const playingSoundsRef = useRef([]);
-  const [activeBox, setActiveBox] = useState(null);
-  const [bokehScale, setBokehScale] = useState(5);
-  const [isVisible, setIsVisible] = useState(false);
-  const targetRef = useRef(null);
+  useEffect(() => {
+    // Preload the sounds when the component mounts
+    preloadSounds();
+
+    // ... (your existing code)
+  }, []);
 
   useEffect(() => {
     const options = {
@@ -95,10 +117,7 @@ function SpaceDrumMachine() {
             playingSoundsRef.current[key].stop();
           }
 
-          const sound = new Howl({
-            src: [audioMap[key]],
-            volume: 1.0,
-          });
+          const sound = preloadedSounds[key];
 
           playingSoundsRef.current.push(sound);
 

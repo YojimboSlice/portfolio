@@ -75,13 +75,15 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-stone-50 text-[17px] max-w-3xl leading-[30px]"
         >
-          The following projects highlight my proficiency in languages such as
-          JavaScript and libraries such as React, a bit of Three.js, along with
-          HTML5 and CSS. There are links to each project, including a capstone
-          project that is an E-commerce website. I used this capstone project to
-          learn React and other technologies like integrating Stripe API for
-          payments, and Google FireStore for user data storage. Working on this
-          long term project helped me to understand the full process of making a
+          The following projects highlight my learning journey in languages such
+          as JavaScript, along with HTML5 and CSS. Diving into React with those
+          three as a foundation, I've explored frameworks, and state management
+          solutions such as React Query, Redux Toolkit, Tailwind, and
+          Express.js. There are links to each project, including an ongoing
+          capstone project that is an e-commerce website. I used this capstone
+          project to learn React and other technologies like integrating Stripe
+          API for payments, and Supabase for user data storage. Working on this
+          long term project is helping me to understand the process of making a
           full-stack application, and to compartmentalize all of the functions
           of an application.
         </motion.p>

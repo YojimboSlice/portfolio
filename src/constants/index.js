@@ -186,8 +186,8 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Pacific Work Wear",
-    description: `Using React Query for remote state to fetch image, price, sku, and a myriad of other pieces of data, from Supabase. Also created a proxy server for managing endpoints from Stripe, Taxjar, EasyPost, and SendGrid APIs I also used redux to create a ui state for the user cart. Most challenging app so far.`,
+    name: "Pacific Work Wear Frontend",
+    description: `Ongoing project. Uses React Query for remote state to fetch image, price, sku, and a myriad of other pieces of data, from Supabase. Proxy server manages endpoints from Stripe, Taxjar, EasyPost, and SendGrid APIs I also used redux to create a ui state for the user cart. Most challenging app so far.`,
     tags: [
       {
         name: "react",
@@ -195,30 +195,47 @@ const projects = [
       },
       {
         name: "html",
-        color: "orange-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "reactquery",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
 
       {
         name: "redux toolkit",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
       {
         name: "react hook form",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: pacificworkwear,
     source_code_link:
       "https://github.com/YojimboSlice/e-commerce-frontend/tree/main/",
     website_link: "https://genuine-meerkat-440485.netlify.app/shop",
+  },
+  {
+    name: "Pacific Work Wear Backend",
+    description: `Proxy server for Pacific Workwear. This app uses Express.js to create endpoints for integration with Stripe, Taxjar, EasyPost, and SendGrid. The main project I used to learn about Express.js apps, and how they are usually structured. Learned alot about routing endpoints.`,
+    tags: [
+      {
+        name: "node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: pacificworkwear,
+    source_code_link: "https://github.com/YojimboSlice/e-commerce-backend",
+    website_link: "https://amused-wasp-undershirt.cyclic.app/",
   },
   {
     name: "The Wild Oasis",
@@ -230,15 +247,15 @@ const projects = [
       },
       {
         name: "html",
-        color: "orange-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "reactquery",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: wildoasis,
@@ -255,15 +272,15 @@ const projects = [
       },
       {
         name: "html",
-        color: "orange-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "tailwind",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "react redux",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: fastreactpizzaco,
@@ -281,11 +298,11 @@ const projects = [
       },
       {
         name: "html",
-        color: "orange-text-gradient",
+        color: "pink-text-gradient",
       },
       {
         name: "scss",
-        color: "pink-text-gradient",
+        color: "orange-text-gradient",
       },
     ],
     image: expensestracker,
