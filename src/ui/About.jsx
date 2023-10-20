@@ -48,9 +48,9 @@ const About = () => {
         an app that manages all the endpoints for my capstone project. This
         backend app integrates with Stripe, EasyPost, TaxJar, and SendGrid
         API's. When I'm not learning about programming, I'm jamming out,
-        thinking of lyrics, and messing with synthesizers. Besides music, I come
-        from a team sports background via rugby growing up. Hopefully I can be
-        on your team next!
+        thinking of lyrics, and messing with synthesizers. Besides music, I have
+        a background in team sports through rugby and volleyball. Hopefully I
+        can be on your team next!
       </motion.p>
       <div className="mt-20 grid grid-cols-2 gap-10">
         {services.map((service, index) => (
